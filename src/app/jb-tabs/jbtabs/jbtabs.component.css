@@ -1,0 +1,72 @@
+/* Style the tab */
+.tab {
+    overflow: auto;
+    border-bottom: 1px solid #ccc;
+    /* background-color: #f1f1f1; */
+    display:flex;
+}
+
+/* Style the buttons inside the tab */
+.tab .tablinks {
+    background-color: inherit;
+    flex-shrink: 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab .tablinks:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab .tablinks.activeTab {
+    background-color: #00346A; 
+    color:white;
+}
+/* 
+.tab button.activeTab::after {
+    content: "";
+    display:block;
+    width:100%;
+    position:relative;
+    height:2px;
+    bottom: 0px;
+    background-color: #00346A;
+} */
+
+
+
+/* Style the tab content */
+.tabcontent {
+    /* display: none; */
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+/* Styling the scrollbars */
+::-webkit-scrollbar {
+    width: 8px;
+}
+ 
+/* Track */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgba(190,190,190,0.8); 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+::-webkit-scrollbar-thumb:window-inactive {
+	background: rgba(190,190,190,0.4); 
+}

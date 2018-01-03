@@ -1,0 +1,66 @@
+<h4 class="pa2 bg-gray white">Hello People !</h4>
+
+<div class="w-75 pa2">
+
+  <jb-tab-group>
+
+    <jb-tab label="Example 1">
+      <div>
+        Ashish
+        <br> Variable Content: {{title}}
+
+      </div>
+    </jb-tab>
+
+    <jb-tab label="Example 2">
+
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam cumque earum soluta incidunt velit rerum itaque totam pariatur
+        cum atque dolorum, necessitatibus natus sint ipsa sunt commodi quia repudiandae excepturi odio rem deserunt! Pariatur
+        velit aperiam ut quia, distinctio perferendis temporibus laborum esse libero dolor?
+        <hr>
+        <div *ngFor="let item of arr">
+          <strong>{{item}}</strong>
+        </div>
+      </div>
+
+    </jb-tab>
+
+    <jb-tab>
+
+      <ng-template jb-tab-label>
+        ⭐ Hello
+        <strong>Friends !</strong>
+        <br> {{title}}
+      </ng-template>
+
+      This is an example with ng-template using jb-tab-label directive. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Aperiam cumque earum soluta incidunt velit rerum itaque totam pariatur cum atque dolorum, necessitatibus natus sint
+      ipsa sunt commodi quia repudiandae excepturi odio rem deserunt! Pariatur velit aperiam ut quia, distinctio perferendis
+      temporibus laborum esse libero dolor?
+      <hr>
+      <div *ngFor="let item of arr">
+        <strong>{{item}}</strong>
+      </div>
+
+    </jb-tab>
+
+
+    <jb-tab label="One More">
+      Hello Friends, this is another Tab.
+    </jb-tab>
+
+    <jb-tab>
+      <ng-template jb-tab-label>
+        My ⭐
+        <strong>Tab</strong>
+      </ng-template>
+      Hello Friends, this is another Tab.
+    </jb-tab>
+
+
+
+
+  </jb-tab-group>
+
+</div>

@@ -1,0 +1,13 @@
+<!-- This ng-content is helping me get everhtin inside -->
+<template>
+    <ng-content></ng-content>
+</template>
+
+
+<div *ngIf="mycontent" class="tab">
+  <div [ngClass]="{ 'tablinks': true, 'activeTab': (item == activeTab)}" 
+  *ngFor="let item of mycontent" (click)="changeTab(item)" [innerHTML]="item.label">
+    <!-- {{item.label}} -->
+  </div>
+</div>
+<div class="tabcontent"></div>
